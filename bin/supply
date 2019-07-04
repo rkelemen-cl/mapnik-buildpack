@@ -16,6 +16,7 @@ echo "Creating .curlrc"
 echo "insecure" > ~/.curlrc
 
 echo "Installing dependencies to $DEPS_DIR/$DEPS_IDX"
+cd ${DEPS_DIR}/${DEPS_IDX}
 ${DEPS_DIR}/${DEPS_IDX}/mason/mason install jpeg_turbo 1.5.1 libjpeg
 ${DEPS_DIR}/${DEPS_IDX}/mason/mason install libpng 1.6.28 libpng
 ${DEPS_DIR}/${DEPS_IDX}/mason/mason install libtiff 4.0.7 libtiff
